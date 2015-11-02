@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <ul class="pull-right">
+      <li><%= link_to "Welcome", home_path %></li>
+      <li><%= link_to "Portfolio", portfolio_path %></li>
+      <li><%= link_to "Contact" , contact_path %></li>
+    </ul>
+  </div>
+</div>
+
+<%= yield %>
+
+<div class="footer">
+  <div class="container">
+    <ul class="pull-left">
+      <%= link_to "© 2015 Quan Tran", contact_path %>
+    </ul>
+    <ul class="pull-right">
+      <p>Share this page</p>
+      <a href="#"><img src="https://s3-eu5.ixquick.com/cgi-bin/serveimage?url=http%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.Ma1a43ad8bd475eb8b117e00a1a0a90a0o0%26pid%3D15.1%26f%3D1&sp=94eec8ac58b0eaeb75edc7b064f32e3b" width = "50"></a>
+      <a href="#"><img src="https://s3-eu5.ixquick.com/cgi-bin/serveimage?url=http%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.M6f2455fecb9cf51564c7b58b057d723bH0%26pid%3D15.1%26f%3D1&sp=6631418fb0b7dd67eaf83022b84648be" width = "50"></a>
+      <a href="#"><img src="https://s15-us2.ixquick.com/cgi-bin/serveimage?url=http%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.M769b2f2929515498d08cce4f5941960co0%26pid%3D15.1%26f%3D1&sp=4a003c10f37daf6128400e7bc3feb0ce" width = "50"></a>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
